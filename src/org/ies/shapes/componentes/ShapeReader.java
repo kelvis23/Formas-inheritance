@@ -23,7 +23,7 @@ public class ShapeReader {
             System.out.println("3. triangulo");
             opt= scanner.nextInt();
             scanner.nextLine();
-        }while (opt <0|| opt >4);
+        }while (opt <0|| opt>3);
         if (opt == 1){
             circleReader.read();
         } else if (opt ==2) {
@@ -31,6 +31,5 @@ public class ShapeReader {
         }else {
             triangleReader.read();
         }
-        return null;
     }
 }
