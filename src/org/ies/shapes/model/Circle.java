@@ -1,6 +1,8 @@
+package org.ies.shapes.model;
+
 import java.util.Objects;
 
-public class Circle extends Shapes{
+public class Circle extends Shape {
     private  double radio;
 
     public Circle(String color, double radio) {
@@ -14,7 +16,7 @@ public class Circle extends Shapes{
     }
 
     @Override
-    public void shoInfo() {
+    public void showInfo() {
         System.out.println("Circulo "+radio+" de color"+color);
     }
 
@@ -42,7 +44,7 @@ public class Circle extends Shapes{
 
     @Override
     public String toString() {
-        return "Circle{" +
+        return "org.ies.shapes.model.Circle{" +
                 "radio=" + radio +
                 ", color='" + color + '\'' +
                 '}';

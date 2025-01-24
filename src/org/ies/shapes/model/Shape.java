@@ -1,9 +1,11 @@
+package org.ies.shapes.model;
+
 import java.util.Objects;
 
-abstract class Shapes {
- protected String color ;
+public abstract class Shape {
+    protected String color;
 
-    public Shapes(String color) {
+    public Shape(String color) {
         this.color = color;
     }
 
@@ -20,8 +22,8 @@ abstract class Shapes {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Shapes shapes = (Shapes) o;
-        return Objects.equals(color, shapes.color);
+        Shape shape = (Shape) o;
+        return Objects.equals(color, shape.color);
     }
 
     @Override
@@ -31,10 +33,12 @@ abstract class Shapes {
 
     @Override
     public String toString() {
-        return "Shapes{" +
+        return "org.ies.shapes.model.Shapes{" +
                 "color='" + color + '\'' +
                 '}';
     }
-   public abstract void  area (double area);
-    public abstract void shoInfo();
+
+    public abstract void area(double area);
+
+    public abstract void showInfo();
 }

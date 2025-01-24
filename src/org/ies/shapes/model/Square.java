@@ -1,6 +1,8 @@
+package org.ies.shapes.model;
+
 import java.util.Objects;
 
-public class Square extends Shapes {
+public class Square extends Shape {
     private double side;
 
     public Square(String color, double side) {
@@ -23,7 +25,7 @@ public class Square extends Shapes {
     }
 
     @Override
-    public void shoInfo() {
+    public void showInfo() {
         System.out.println("Cuadrado "+side+" color"+color);
     }
 
@@ -47,7 +49,7 @@ public class Square extends Shapes {
 
     @Override
     public String toString() {
-        return "Square{" +
+        return "org.ies.shapes.model.Square{" +
                 "side=" + side +
                 ", color='" + color + '\'' +
                 '}';

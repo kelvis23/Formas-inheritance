@@ -1,6 +1,8 @@
+package org.ies.shapes.model;
+
 import java.util.Objects;
 
-public class SquareTriangle extends Shapes {
+public class SquareTriangle extends Shape {
     private double height;
     private double base;
 
@@ -16,7 +18,7 @@ public class SquareTriangle extends Shapes {
     }
 
     @Override
-    public void shoInfo() {
+    public void showInfo() {
         System.out.println("Triangulo " + height + " altura " + base + " base " + color + " color");
     }
 
@@ -52,7 +54,7 @@ public class SquareTriangle extends Shapes {
 
     @Override
     public String toString() {
-        return "SquareTriangle{" +
+        return "org.ies.shapes.model.SquareTriangle{" +
                 "color='" + color + '\'' +
                 ", base=" + base +
                 ", height=" + height +
