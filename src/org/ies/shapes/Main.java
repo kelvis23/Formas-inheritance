@@ -26,11 +26,13 @@ public class Main {
         Circle circle =new Circle("blue",6);
         SquareTriangle squareTriangle = new SquareTriangle("amarillo",5,4);
 
-        square.area(4);
+        squareTriangle.showInfo();
         square.showInfo();
-        circle.area(6);
         circle.showInfo();
-        squareTriangle.area(5 );
+
+        System.out.println(squareTriangle.area());
+        System.out.println(square.area());
+        System.out.println(circle.area());
     }
 
 

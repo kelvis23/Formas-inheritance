@@ -38,7 +38,7 @@ public abstract class Shape {
                 '}';
     }
 
-    public abstract void area(double area);
+    public abstract double area();
 
     public abstract void showInfo();
 }

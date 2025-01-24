@@ -13,8 +13,8 @@ public class SquareTriangle extends Shape {
     }
 
     @Override
-    public void area(double area) {
-        area = base * height / 2;
+    public double area() {
+        return  (base * height) / 2;
     }
 
     @Override

@@ -11,8 +11,8 @@ public class Circle extends Shape {
     }
 
     @Override
-    public void area(double area) {
-        area= 3.14*radio*radio;
+    public double area() {
+        return Math.PI * 3.14*radio*radio;
     }
 
     @Override
