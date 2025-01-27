@@ -5,10 +5,11 @@ import org.ies.shapes.componentes.ShapeReader;
 import org.ies.shapes.componentes.SquareReader;
 import org.ies.shapes.componentes.TriangleReader;
 import org.ies.shapes.model.Circle;
+import org.ies.shapes.model.Shape;
 import org.ies.shapes.model.Square;
 import org.ies.shapes.model.SquareTriangle;
 
-import java.awt.*;
+
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -20,7 +21,7 @@ public class Main {
          SquareReader squareReader = new SquareReader(scanner);
          TriangleReader triangleReader =new TriangleReader(scanner);
         ShapeReader shapeReader = new ShapeReader(scanner,circleReader,squareReader,triangleReader);
-        Shape shape = shapeReader.read();
+       Shape shape = shapeReader.read();
         ;
         Square square =new Square("red",4);
         Circle circle =new Circle("blue",6);
