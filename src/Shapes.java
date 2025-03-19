@@ -7,6 +7,15 @@ abstract class Shapes {
         this.color = color;
     }
 
+
+
+    public  abstract  double area ();
+    public  void  color (){
+        System.out.println("color"+color);
+    }
+    public  abstract void info ();
+
+
     public String getColor() {
 
         return color;
@@ -35,6 +44,5 @@ abstract class Shapes {
                 "color='" + color + '\'' +
                 '}';
     }
-   public abstract void  area (double area);
-    public abstract void shoInfo();
+
 }

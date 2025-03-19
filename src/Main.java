@@ -6,11 +6,11 @@ public class Main {
         Circle circle =new Circle("blue",6);
         SquareTriangle squareTriangle = new SquareTriangle("amarillo",5,4);
 
-        square.area(4);
-        square.shoInfo();
-        circle.area(6);
-        circle.shoInfo();
-        squareTriangle.area(5 );
+        square.area();
+        square.info();
+        circle.area();
+        circle.info();
+        squareTriangle.info( );
     }
 
 

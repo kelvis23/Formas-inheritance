@@ -9,13 +9,14 @@ public class Circle extends Shapes{
     }
 
     @Override
-    public void area(double area) {
-        area= 3.14*radio*radio;
+    public double area() {
+        return Math.PI*radio*radio;
     }
 
     @Override
-    public void shoInfo() {
-        System.out.println("Circulo "+radio+" de color"+color);
+    public void info() {
+        color();
+        System.out.println("Circulo "+radio);
     }
 
     public double getRadio() {

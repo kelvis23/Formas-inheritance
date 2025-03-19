@@ -11,13 +11,14 @@ public class SquareTriangle extends Shapes {
     }
 
     @Override
-    public void area(double area) {
-        area = base * height / 2;
+    public double area() {
+        return (base * height) / 2;
     }
 
     @Override
-    public void shoInfo() {
-        System.out.println("Triangulo " + height + " altura " + base + " base " + color + " color");
+    public void info() {
+        color();
+        System.out.println("Triangulo :" + height + " altura " + base + " base " );
     }
 
     public double getHeight() {
