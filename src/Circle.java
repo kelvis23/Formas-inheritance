@@ -7,7 +7,7 @@ public class Circle extends Shapes{
         super(color);
         this.radio = radio;
     }
-
+// la otraforma de aser el area
     @Override
     public double area() {
         return Math.PI*radio*radio;
